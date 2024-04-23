@@ -3,6 +3,7 @@ using Abp.Zero.EntityFrameworkCore;
 using MyProject.Authorization.Roles;
 using MyProject.Authorization.Users;
 using MyProject.MultiTenancy;
+using MyProject.Std;
 
 namespace MyProject.EntityFrameworkCore
 {
@@ -16,5 +17,6 @@ namespace MyProject.EntityFrameworkCore
         }
         public DbSet<Employee.Employee> employees { get; set; }
         public DbSet<Department.Department> departments { get; set; }
+        public DbSet<Student> students { get; set; }
     }
 }
